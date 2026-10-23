@@ -25,7 +25,7 @@ uppercase }}</span> }
 
  <p>Durée : {{ c.duree }}</p>
  <p>{{c.places|placesRestantes}}</p>
- </article>} @empty {
+ <a [routerLink]="['/cours', c.id]">Voir le détail</a></article>} @empty {
  <p class="liste-vide">Aucun cours ne correspond à la recherche.</p>
  }
  
